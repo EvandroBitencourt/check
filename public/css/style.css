@@ -1,0 +1,71 @@
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+}
+.header_plans{
+  height: 500px;
+  padding: 50px;
+}
+
+.section_planos {
+  height: 700px;
+  padding: 50px;
+  background-color: #eee;
+}
+
+.section_planos h3 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.contact_check {
+  height: 700px;
+  padding: 50px;
+  background-color: #57585a;
+  display: flex;
+  align-items: center 
+}
+
+.form_contact{
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 9px;
+  border: 1px solid #333;
+  box-shadow: 1px 2px 5px 5px #888888;
+}
+
+.form_contact h2{
+  font-size: 30px;
+}
+
+.img_contact {
+  padding-top: 50px;
+}
+
+.header_plans img {
+  right: 0;
+  float: right;
+  position: absolute;
+  padding: 10px;
+  height: 200px;
+}
+
+.check_footer {
+  height: 60px;
+  background-color: black;
+  color: #fff;
+  line-height: 60px;
+  border: 1px solid #333;
+}
+
+.check_fipe {
+  height: 700px;
+  padding: 50px;
+  background-color: #1572aa;
+}
+
+.logobranco_fipe img {
+   padding-top:100px;
+}
+
