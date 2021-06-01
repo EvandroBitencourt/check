@@ -3,7 +3,13 @@
         <img class="block mx-auto" src="{{ asset('images/check.png') }}" />
         <h2 class="py-4 text-primary" style="font-size: 25px">Confira nossas ofertas:</h2>
 
-        <div class="row align-items-center text-center mt-5">
+
+        
+
+
+
+
+        <div class="row align-items-center text-center mt-8">
             <div class="col-sm">
                 <button onclick="trocaImg(1)" type="button" class="btn btn-outline-primary btn-block">Categoria 01</button>
             </div>

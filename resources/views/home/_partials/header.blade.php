@@ -16,7 +16,7 @@
                 <a class="nav-link" href="#checar">CHECAR</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#comprar">COMPRAR</a>
+                <a class="nav-link" href="/login">COMPRAR</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#plans">PLANOS</a>
@@ -25,7 +25,7 @@
                 <a class="nav-link" href="#contato">CONTATO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#login">LOGIN</a>
+                <a class="nav-link" href="/login">LOGIN</a>
               </li>
             </ul>
           </div>
