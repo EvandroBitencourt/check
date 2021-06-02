@@ -41,8 +41,8 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>53<sup style="font-size: 20px">%</sup></h3>
-                <p>Bounce Rate</p>
+                <h3>53</h3>
+                <p>Carros Anunciados</p>
               </div>
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>
@@ -54,21 +54,21 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>44</h3>
-                <p>User Registrations</p>
+                <h3>20</h3>
+                <p>Cliques</p>
               </div>
               <div class="icon">
-                <i class="ion ion-person-add"></i>
+              <i class="ion ion-bag"></i>
               </div>
             </div>
           </div>
           <!-- ./col -->
           <div class="col-lg-3 col-6">
             <!-- small box -->
-            <div class="small-box bg-danger">
+            <div class="small-box bg-success">
               <div class="inner">
-                <h3>65</h3>
-                <p>Unique Visitors</p>
+                <h3>00</h3>
+                <p>Total de Carros Comprados</p>
               </div>
               <div class="icon">
                 <i class="ion ion-pie-graph"></i>
