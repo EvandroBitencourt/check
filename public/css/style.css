@@ -4,8 +4,7 @@ body{
   margin:0;
 }
 .header_plans{
-  height: 500px;
-  padding: 50px;
+  padding: 10px;
 }
 
 .section_planos {
@@ -17,9 +16,30 @@ body{
   font-size: 40px;
   margin-bottom: 10px;
 }
-
+.text_fipe{
+  font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+}
+.input_fipe{
+  width: 56%;
+  height: 67px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 19px;
+  font-size: 30px;
+}
+.botao_fipe{
+  width: 23%;
+    font-size: 30px;
+    color: #fff;
+    background: #1572aa;
+    font-weight: 800;
+    margin: auto;
+    border: none;
+}
 .contact_check {
-  height: 700px;
   padding: 50px;
   background-color: #57585a;
   display: flex;
@@ -43,7 +63,8 @@ body{
 }
 
 .header_plans img {
-  right: 0;
+  right: 76px;
+  top: 245px;
   float: right;
   position: absolute;
   padding: 10px;
@@ -59,12 +80,40 @@ body{
 }
 
 .check_fipe {
-  height: 700px;
   padding: 50px;
   background-color: #1572aa;
 }
 
-.logobranco_fipe img {
-   padding-top:100px;
+.menus{
+  color: #007bff !important;
+  font-weight: 700;
 }
-
+.seta{
+  color: red;
+  position: absolute;
+  font-size: 49px;
+  right: 24px;
+}
+.largura{
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.plano{
+  height: 41px;
+  font-size: 19px;
+  font-weight: 800;
+}
+.card_oferta{
+  font-size: 26px;
+  font-weight: 700;
+  color: #11a50f;
+}
+.espaco{
+  margin-right: 10px;
+}
+.botao{
+  width: 80%;
+  height: 65px;
+  font-size: 35px;
+  font-weight: 800;
+}

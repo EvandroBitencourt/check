@@ -10,22 +10,22 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#features">QUEM SOMOS</a>
+                <a class="nav-link active menus" aria-current="page" href="#features">QUEM SOMOS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#checar">CHECAR</a>
+                <a class="nav-link menus" href="#checar">CHECAR</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/login">COMPRAR</a>
+                <a class="nav-link menus" href="/login">COMPRAR</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#plans">PLANOS</a>
+                <a class="nav-link menus" href="#plans">PLANOS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contato">CONTATO</a>
+                <a class="nav-link menus" href="#contato">CONTATO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/login">LOGIN</a>
+                <a class="nav-link menus" href="/login">LOGIN</a>
               </li>
             </ul>
           </div>

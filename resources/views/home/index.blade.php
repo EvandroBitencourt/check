@@ -3,7 +3,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Check KM</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon/favicon-32x32.png') }}" />
     <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('images/favicon/favicon-96x96.png') }}" />
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicon/favicon-16x16.png') }}" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -17,8 +16,9 @@
 
     <link href="{{ asset('css/site.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-
-    <script type="text/javascript" src="{{asset('js/banner.js')}}"></script>
+    
+    <script src="./images/carrossel/glider.js"></script>
+    <link rel="stylesheet" type="text/css" href="./images/carrossel/glider.css">
 </head>
 <body>
     <div id="app">
