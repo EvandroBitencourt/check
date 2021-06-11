@@ -10,4 +10,15 @@ class SiteController extends Controller
     {
         return view('home.index');
     }
+
+    public function plano($plano)
+    {
+        session()->put('plano', $plano);
+        return redirect()->route('subscriptions.checkout');
+    }
+    public function planos()
+    {
+        return view('planos');
+    }
+    
 }

@@ -7,9 +7,9 @@
             </p>
         </div>
         <div class="row mt-4 justify-content-md-center">
-            <div class="col-sm col-lg-3"><img src="{{asset('images/planos/plano1.png')}}" /> </div>
-            <div class="col-sm col-lg-3"><img src="{{asset('images/planos/plano2.png')}}" /> </div>
-            <div class="col-sm col-lg-3"><img src="{{asset('images/planos/plano3.png')}}" /> </div>
+            <div class="col-sm col-lg-3"><a href="{{ route('plano.home', 'plano01') }}"><img src="{{asset('images/planos/plano1.png')}}"/> </a></div>
+            <div class="col-sm col-lg-3"><a href="{{ route('plano.home', 'plano02') }}"><img src="{{asset('images/planos/plano2.png')}}"/> </a></div>
+            <div class="col-sm col-lg-3"><a href="{{ route('plano.home', 'plano03') }}"><img src="{{asset('images/planos/plano3.png')}}"/> </a></div>
         </div>
     </div>
 </section>

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c9e056e3c3a58cf9e27220c9bbca9a8c",
+    "content-hash": "6181728998d1e35bdee1b86672c85116",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -930,16 +930,16 @@
         },
         {
             "name": "laravel/cashier",
-            "version": "v12.13.0",
+            "version": "v12.14.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/cashier-stripe.git",
-                "reference": "f1a7d5ffce278bf9c85cd3c1b86c45d688f3bf00"
+                "reference": "5936a1746a9a805315c457b894c2aa0cab8530a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/cashier-stripe/zipball/f1a7d5ffce278bf9c85cd3c1b86c45d688f3bf00",
-                "reference": "f1a7d5ffce278bf9c85cd3c1b86c45d688f3bf00",
+                "url": "https://api.github.com/repos/laravel/cashier-stripe/zipball/5936a1746a9a805315c457b894c2aa0cab8530a2",
+                "reference": "5936a1746a9a805315c457b894c2aa0cab8530a2",
                 "shasum": ""
             },
             "require": {
@@ -1004,7 +1004,7 @@
                 "issues": "https://github.com/laravel/cashier/issues",
                 "source": "https://github.com/laravel/cashier"
             },
-            "time": "2021-04-27T17:42:05+00:00"
+            "time": "2021-06-04T09:07:07+00:00"
         },
         {
             "name": "laravel/framework",

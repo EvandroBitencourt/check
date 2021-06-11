@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Subscription;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class SubscriptionController extends Controller
 {
@@ -15,26 +16,50 @@ class SubscriptionController extends Controller
 
     public function index()
     {
-        if (auth()->user()->subscribed('default'))
+        if (auth()->user()->subscribed('default')){
             return redirect()->route('subscriptions.premium');
-
-        return view('subscriptions.index', [
-            'intent' => auth()->user()->createSetupIntent(),
-        ]);
+        } 
+       $plano = session()->get('plano');
+       if($plano == "plano01"){
+            $msg = "Bronze R$ 19,99/mês";
+       }else  if($plano == "plano01"){
+            $msg = "Prata R$ 49,99/mês";
+       }else  if($plano == "plano01"){
+            $msg = "Ouro R$ 99,99/mês";
+       }else{
+            return redirect()->route('planos');
+       }
+           
+        return view('subscriptions.index', ['intent' => auth()->user()->createSetupIntent(), 'plano' =>  $msg]);
     }
 
     public function store(Request $request)
     {
+        $plano = session()->get('plano');
+       if($plano == "plano01"){
+            $id = "price_1J0FPWGO64tpjsVgr8nLrnT3";
+            $clik = 2;
+       }else  if($plano == "plano01"){
+            $id = "price_1J0FPWGO64tpjsVgr8nLrnT3";
+            $clik = 8;
+       }else  if($plano == "plano01"){
+            $id = "price_1J0FPWGO64tpjsVgr8nLrnT3";
+            $clik = 99999;
+       }
         $request->user()
-                ->newSubscription('default', 'price_1IleUTDP94CdbftgWCBVIbjP')
+                ->newSubscription('default', $id)
                 ->create($request->token);
 
-        return redirect()->route('subscriptions.premium');
-    }
+        if($clik == 99999){
+            DB::table('users')
+                ->where('id', auth()->user()->id)
+                ->update(['clik' => 99999]); 
+        }
+        DB::table('users')
+                ->where('id', auth()->user()->id)
+                ->update(['clik' => (auth()->user()->clik + $clik)]);        
 
-    public function premium()
-    {
-        return view('subscriptions.premium');
+        return redirect()->route('dashboard');
     }
 
     public function account()
@@ -49,7 +74,7 @@ class SubscriptionController extends Controller
         return Auth::user()
                     ->downloadInvoice($invoiceId, [
                         'vendor' => config('app.name'),
-                        'product' => 'Assinatura VIP'
+                        'product' => 'Ckeck KM'
                     ]);
     }
 

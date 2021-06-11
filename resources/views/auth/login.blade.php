@@ -23,7 +23,7 @@
   <div class="card">
     <div class="card-body login-card-body">
       <p class="login-box-msg">Faça login para iniciar sua sessão</p>
-
+      <x-auth-validation-errors class="mb-4" :errors="$errors" />
       <form method="POST" action="{{ route('login') }}">
         @csrf
         <div class="input-group mb-3">
@@ -64,10 +64,14 @@
       <p class="mb-1">
         <a href="{{ route('password.request') }}">Esqueci a minha senha</a>
       </p>
+      <div style="margin-top: 27px;">
+        <p class="login-box-msg">Ainda não tem conta?</p>
+        <a href="/register" class="btn btn-primary btn-block">Cadastra-se aqui</a>
+      </div>
     </div>
-    <!-- /.login-card-body -->
   </div>
 </div>
+  
 <!-- /.login-box -->
 
 <!-- jQuery -->
