@@ -16,15 +16,13 @@ class SubscriptionController extends Controller
 
     public function index()
     {
-        if (auth()->user()->subscribed('default')){
-            return redirect()->route('subscriptions.premium');
-        } 
+        
        $plano = session()->get('plano');
        if($plano == "plano01"){
             $msg = "Bronze R$ 19,99/mês";
-       }else  if($plano == "plano01"){
+       }else  if($plano == "plano02"){
             $msg = "Prata R$ 49,99/mês";
-       }else  if($plano == "plano01"){
+       }else  if($plano == "plano03"){
             $msg = "Ouro R$ 99,99/mês";
        }else{
             return redirect()->route('planos');

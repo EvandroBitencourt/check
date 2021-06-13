@@ -43,6 +43,14 @@
           </div>
         </div>
         <div class="input-group mb-3">
+          <input type="number" class="form-control" placeholder="Celular" id="telefone" name="telefone">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fas fa-phone">
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
           <input type="password" class="form-control" placeholder="Senha" id="password" name="password">
           <div class="input-group-append">
             <div class="input-group-text">

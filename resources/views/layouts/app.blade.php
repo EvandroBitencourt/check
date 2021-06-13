@@ -29,12 +29,12 @@
   <!-- Lib Stripe -->
   <script src="https://js.stripe.com/v3/"></script>
 </head>
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="hold-transition sidebar-mini layout-fixed sidebar-collapse">
 <div class="wrapper">
 
   <!-- Preloader -->
   <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src="./painel/dist/img/AdminLTELogo.png" alt="check" height="60" width="60">
+    <img class="animation__shake" src="{{ asset('images/content/logo.png') }}" alt="check" height="60" width="60">
   </div>
 
   <!-- Navbar -->
@@ -48,7 +48,7 @@
         <a href="/dashboard" class="nav-link">Inicio</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="/subscriptions/account" class="nav-link">Minha Assinatura</a>
+        <a href="/account" class="nav-link">Minha Assinatura</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <span class="nav-link ml-5">Bem Vindo(a) {{ Auth::user()->name }}!</span>
@@ -88,33 +88,33 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
             <a href="/dashboard" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <i class="nav-icon fas fa-store-alt"></i>
               <p>
-                Comprar
+                Carros em Ofertas
               </p>
             </a>
           </li>
           <li class="nav-item">
             <a href="/cadastrar" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="nav-icon fas fa-cart-plus"></i>
               <p>
-                Vender
+                Vender meu Carro
               </p>
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="nav-icon fas fas fa-car"></i>
               <p>
-                Carros Comprado
+                Carros Comprados
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <a href="/vercarro" class="nav-link">
+              <i class="nav-icon fas fa-cart-arrow-down"></i>
               <p>
-                Carros Vendido
+                Meus Carros á venda
               </p>
             </a>
           </li>
@@ -127,8 +127,8 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="/subscriptions/account" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <a href="/account" class="nav-link">
+              <i class="nav-icon fas fa-file-signature"></i>
               <p>
                 Minha Assinatura
               </p>
@@ -136,7 +136,7 @@
           </li>
           <li class="nav-item">
             <a href="/planos" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="nav-icon far fa-credit-card"></i>
               <p>
                 Planos mensais
               </p>
