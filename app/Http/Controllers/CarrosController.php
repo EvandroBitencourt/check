@@ -77,7 +77,7 @@ class CarrosController extends Controller
 
     public function verCarro()
     {
-
+        
         return view('vercarro');
     }
 }
